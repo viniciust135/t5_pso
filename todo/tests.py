@@ -11,8 +11,8 @@ class YourTestClass(TestCase):
         pass
 
     def test_false_is_false(self):
-        self.assertFalse(True)
+        self.assertFalse(False)
 
     def test_one_plus_one_equals_two(self):
-        self.assertEqual(1 + 1, 5)
+        self.assertEqual(1 + 1, 2)
 
