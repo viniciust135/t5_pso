@@ -11,7 +11,14 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
+#import django_heroku
+# Try to import django-heroku depending on Travis or Heroku
+try:
+    # Configure Django App for Heroku.
+    import django_heroku
+    django_heroku.settings(locals())
+except ImportError:
+    found = False
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
