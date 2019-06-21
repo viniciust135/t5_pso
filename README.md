@@ -1,4 +1,4 @@
-#T5 de PSO - Integração contínua: Travis + GitHub + Heroku
+T5 de PSO - Integração contínua: Travis + GitHub + Heroku
 
 
 
